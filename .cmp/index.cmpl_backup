@@ -1,0 +1,22 @@
+[
+  {
+    "name": "front-main-index",
+    "desc": "web主站首页",
+    "img": "/.cmp/index/example.png",
+    "url": "/.cmp/index/index.cmpp"
+  },
+  {
+    "name": "front-kaoyan-order",
+    "desc": "订单支付",
+    "img": "/.cmp/order/example.png",
+    "url": "/.cmp/order/index.cmpp",
+    "postUrl": "/api/front-kaoyan-order"
+  },
+  {
+    "name": "front-kaoyan-index",
+    "desc": "web主站首页",
+    "img": "/.cmp/index/example.png",
+    "url": "/.cmp/index/index.cmpp",
+    "postUrl": "/api/front-main-index"
+  }
+]

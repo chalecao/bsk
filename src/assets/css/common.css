@@ -1,0 +1,229 @@
+body {
+    overflow: hidden;
+}
+
+.f-cb:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    content: ".";
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    min-height: 40px;
+}
+
+.navbar-brand {
+    height: 40px;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.thumbnail {
+    max-width: 131px;
+}
+
+.main {
+    padding-top: 40px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+}
+
+.oper-container {
+    float: left;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+
+.oper-container .panel {
+    margin-bottom: 0px;
+    position: absolute;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    background-color: #f8f8f8;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.sidebar {
+    z-index: 2;
+    position: relative;
+    height: 100%;
+}
+
+.sidebar .nav-sidebar {
+    padding: 0px;
+    width: 40px;
+    float: left;
+    z-index: 1;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.sidebar .nav>li>a {
+    padding: 8px 5px;
+    text-align: center;
+    z-index: 1;
+}
+
+.nav-sidebar a.active,
+.nav-sidebar a.active:hover,
+.nav-sidebar a.active:focus {
+    color: #fff;
+    background-color: #428bca;
+    cursor: pointer;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.side-cont {
+    height: 100%;
+    width: auto;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    background-color: #f8f8f8;
+}
+
+.side-cont h4 {
+    font-size: 16px;
+}
+
+.side-cont p {
+    font-size: 12px;
+}
+
+.side-cont .nav-tabs {
+    position: fixed;
+    background-color: #f8f8f8;
+    width: 168px;
+    z-index: 3;
+    border: 0;
+}
+
+.side-cont .tab-content {
+    margin-top: 38px;
+}
+
+.side-cont .nav-tabs li {
+    margin: 0px;
+}
+
+.nav-tabs>li>a.router-link-exact-active.active {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.list-group-item {
+    border-top: 0;
+    width: 166px;
+    border-bottom: 0;
+}
+
+
+/*画布*/
+
+.viewport {
+    background-image: -webkit-linear-gradient(rgba(200, 200, 200, 0.3) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(200, 200, 200, 0.3) 1px, transparent 1px);
+    background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+    background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    border: 1px solid rgba(200, 200, 200, 0.3);
+}
+
+.viewportContainer {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+}
+
+
+/*动画*/
+
+.fade-enter-active {
+    transition: all .3s ease;
+    opacity: 1;
+}
+
+.fade-leave-active {
+    opacity: 0;
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.fade-enter,
+.fade-leave-active {
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.slide-enter-active {
+    transition: all .3s ease;
+    opacity: 1;
+}
+
+.slide-leave-active {
+    opacity: 0;
+    transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+
+/*滚动条*/
+
+::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+ ::-webkit-scrollbar-button {
+    display: none;
+}
+
+ ::-webkit-scrollbar-thumb {
+    width: 4px;
+    min-height: 15px;
+    background: #aaa !important;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #aaa !important;
+}

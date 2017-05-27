@@ -1,0 +1,46 @@
+[
+    {
+        "name": "index",
+        "desc": "考研首页",
+        "img": "/.cmp/index/example.png",
+        "url": "/.cmp/index/index.cmp",
+        "ftlPath": "/src/views/web/index/",
+        "cssPath": "/src/scss/web/pages/index/",
+        "ruiPath": "",
+        "libPath": "",
+        "postUrl": "/api/index"
+    },
+    {
+        "name": "index-live",
+        "desc": "首页直播卡片",
+        "img": "/.cmp/index-live/example.png",
+        "url": "/.cmp/index-live/index-live.cmp",
+        "ftlPath": "",
+        "cssPath": "",
+        "ruiPath": "/src/javascript/web/components/index-live/",
+        "libPath": "/src/javascript/lib/",
+        "postUrl": "/api/index-live"
+    },
+    {
+        "name": "index-teacher",
+        "desc": "考研首页老师列表",
+        "img": "/.cmp/index-teacher/example.png",
+        "url": "/.cmp/index-teacher/index-teacher.cmp",
+        "ftlPath": "",
+        "cssPath": "",
+        "ruiPath": "/src/javascript/web/components/index-teacher/",
+        "libPath": "/src/javascript/lib/",
+        "postUrl": "/api/index-teacher"
+    },
+    {
+        "name": "index-discuss",
+        "desc": "考研首页经验分享",
+        "img": "/.cmp/index-discuss/example.png",
+        "url": "/.cmp/index-discuss/index-discuss.cmp",
+        "ftlPath": "",
+        "cssPath": "",
+        "ruiPath": "/src/javascript/web/components/index-discuss/",
+        "libPath": "/src/javascript/lib/",
+        "postUrl": "/api/index-discuss"
+    }
+]
